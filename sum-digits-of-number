@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	int hundredsDigit,tensDigit,unitsDigit,lastValue;
+	int number=1111;
+	printf("Enter the number you want to sum digits of number= ");
+	while(number>999 || number<100)
+    {
+	scanf("%d",&number);
+	if(number>999 || number<100)
+	{
+	printf("please enter a 3 digit number= ");
+    }
+	}
+	hundredsDigit=number/100;
+	tensDigit=(number%100)/10;
+	unitsDigit=number%10;
+	lastValue=hundredsDigit+tensDigit+unitsDigit;
+	printf("sum digits of number= %d ",lastValue);
+	return 0;
+}
