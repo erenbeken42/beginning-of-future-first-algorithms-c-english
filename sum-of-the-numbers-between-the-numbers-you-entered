@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	int i;
+    int a=0,b=0,lastValue=0;
+	while(a==b || a>b){
+	
+	printf("please enter the starting number= ");
+	scanf("%d",&a);
+	printf("please enter the ending number = ");
+	scanf("%d",&b);
+	if(a==b)
+	{
+		printf("ending and starting value cannot be the same\nplease re-enter!\n");	
+	}
+    if(a>b)
+    {
+     printf("the starting number cannot be bigger than the ending number\nplease re-enter!\n");
+	}
+    
+	}
+	for(i=a;i<=b;i++)
+	{
+		lastValue=lastValue+i;
+	}
+	printf("the sum of the numbers between the numbers you entered (including the numbers you entered)= %d",lastValue);
+	
+	
+	return 0;
+}
