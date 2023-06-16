@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int guess,number,loop=1,counter;
+number=rand();
+while(loop==1) {
+   counter=1;
+   printf("take a guess\n ");
+   scanf("%d",&guess);
+   while(guess!=number)
+   {
+
+
+        if (number==guess)
+            {
+
+            }
+        else(counter=counter+1);{}
+
+        if( guess>number)
+                    {
+                     printf("\n make a smaller guess \n");
+                    }
+
+        else
+            {
+         printf("\n make a bigger guess \n");
+         }
+        printf(" guess again\n");
+        scanf("%d", &guess);
+
+            }
+
+printf("\n Congratulations! ");
+printf("You got it in %d  tries.",counter);
+printf("\n If you want to continue the game, enter 1 if you do not want to enter -1 \n");
+scanf("%d",&loop);
+while(loop != 1 && loop != -1)
+
+{
+printf("\n please enter 1 or -1\n");
+scanf("%d",&loop);
+}
+}
+
+
+
+printf("\n gameover thanks for playing");
+    return 0;
+}
