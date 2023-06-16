@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+ int month,flag=0;
+while (flag==0) {
+printf("Enter the number of the month you want to know how many days:\n");
+ scanf("%d",&month);
+switch (month) {
+   case 1:
+   case 3:
+   case 5:
+   case 7:
+   case 8:
+   case 10:
+   case 12: printf("\n31"),flag=1 ;break;
+   case 2: printf("\n28"), flag=1; break;
+   case 4:
+   case 6:
+   case 9:
+   case 11: printf("\n30"),flag=1; break;
+   default: printf("\nYou entered the wrong value, ");
+
+ }
+}
+ return 0;
+}
