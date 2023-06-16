@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	int hand,normal;
+	int cost=0;
+
+	printf("Please write the normal and hand luggage usage in order.= ");
+	scanf("%d",&normal);
+	scanf("%d",&hand);
+	if(hand>8)
+	{
+      cost=4*(hand-8);
+	}
+	if(normal>15)
+	{
+	cost=cost+ 5*(normal-15);
+	}
+	printf("total cost= %d",cost);
+
+	
+	
+	
+	return 0;
+}
